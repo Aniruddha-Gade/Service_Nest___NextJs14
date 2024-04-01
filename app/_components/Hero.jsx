@@ -11,7 +11,7 @@ const Hero = () => {
         <span className="text-primary"> Service/Repair</span>
         <br></br> Near You
       </h2>
-      <h2 className="text-xl text-gray-400">
+      <h2 className="text-xl text-center text-gray-400">
         Explore Best Home Service & Repair near you
       </h2>
       <div className="mt-4 flex gap-4 items-center">
