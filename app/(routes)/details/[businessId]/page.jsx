@@ -39,8 +39,7 @@ function BusinessDetail({ params }) {
 
 
     return status == 'authenticated' && business && (
-        <div className='py-8 md:py-20
-    px-10 md:px-36'>
+        <div className='py-8 md:py-20 px-10 md:px-36'>
             <BusinessInfo business={business} />
 
             <div className='grid grid-cols-3 mt-16'>
