@@ -6,7 +6,7 @@ import Footer from "./_components/Footer";
 const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Smart Home",
+  title: "Service Nest",
   description: "Generated Terminal_boyz",
   icons: {
     icon: '/assets/logo/smart-home-logo.jpg'
