@@ -1,4 +1,7 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
+import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
 
@@ -7,7 +10,7 @@ const Header = () => {
     <div className=" p-2 px-6 md:px-16 shadow-md">
       <div className="flex items-center justify-between gap-8 ">
         {/* website logo */}
-        <Link href='/' className='flex gap-1 items-center justify-center '> 
+        <Link href='/' className='flex gap-1 items-center justify-center '>
           <img src="/assets/logo/smart-home-logo.jpg" alt="" width={70} height={70} />
           <p className="text-lg sm:text-2xl font-bold">Service Nest</p>
         </Link>
@@ -33,7 +36,7 @@ const Header = () => {
           </Link>
         </div>
         <div>
-          <Button>Get Started</Button>
+          <Button onClick={() => signIn('descope')}>Login / Sign Up</Button>
         </div>
       </div>
     </div>
