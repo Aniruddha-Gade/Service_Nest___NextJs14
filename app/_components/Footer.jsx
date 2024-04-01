@@ -16,7 +16,7 @@ const Footer = () => {
                         className='object-contain'
                         alt='carHub'
                     />
-                    <p className='text-base text-gray-700'>Smart Home 2024 <br /> All Right Reversed &copy;</p>
+                    <p className='text-base text-gray-700'>Service Nest 2024 <br /> All Right Reversed &copy;</p>
                 </div>
 
                 {/* Footer links */}
@@ -46,7 +46,7 @@ const Footer = () => {
 
             {/* last row */}
             <div className='flex flex-col sm:flex-row justify-between items-center flex-wrap border-t border-gray-100 px-6 sm:px-16 py-10'>
-                <p>@2024 Smart Home . All Right Reversed</p>
+                <p>@2024 Service Nest . All Right Reversed</p>
 
                 <div className='flex-1 flex  sm:justify-end justify-center max-sm:mt-4 gap-10 text-gray-500'>
                     <Link href='/' className='hover:text-primary-blue hover:underline'>Privacy</Link>
