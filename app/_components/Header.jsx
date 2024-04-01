@@ -13,24 +13,24 @@ const Header = () => {
         </Link>
 
         <div className="md:flex items-center gap-6 hidden">
-          <h2
+          <Link href='/'
             className="hover:scale-105 hover:text-primary
                 cursor-pointer"
           >
             Home
-          </h2>
-          <h2
+          </Link>
+          <Link href='/services'
             className="hover:scale-105 hover:text-primary
                 cursor-pointer"
           >
             Services
-          </h2>
-          <h2
+          </Link>
+          <Link href='/about'
             className="hover:scale-105 hover:text-primary
                 cursor-pointer"
           >
             About Us
-          </h2>
+          </Link>
         </div>
         <div>
           <Button>Get Started</Button>
