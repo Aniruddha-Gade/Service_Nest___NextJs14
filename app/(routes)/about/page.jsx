@@ -9,7 +9,7 @@ const About = () => {
                     <div className="container mx-auto">
                         <div className="max-w-lg mx-auto">
                             <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4">
-                                Make Your Home Service Smart One Step Ahed!
+                                Make Your Home Service Smart One Step Ahead!
                             </h1>
                             <p className="text-lg md:text-xl lg:text-2xl text-white">
                                 We provide everything your home needs at your fingertips.
