@@ -11,7 +11,7 @@ function BusinessList({ businessList, title }) {
         <div className='mt-5 wrapper'>
             <h2 className='font-bold text-[22px]'>{title}</h2>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5 '>
-                {businessList.length > 0 ? businessList.map((business, index) => (
+                {businessList.length > 0 ? businessList.map((business) => (
                     <Link href={'/details/' + business.id}
                         key={business.id} className='rounded-lg shadow-lg cursor-pointer hover:shadow-xl hover:scale-105 duration-300 transition-all ease-in-out flex flex-col h-full'>
                         <Image src={business?.images[0].url}
