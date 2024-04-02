@@ -5,6 +5,8 @@ import React, { useEffect, useState } from 'react'
 import BusinessInfo from '../_components/BusinessInfo';
 import SuggestedBusinessList from '../_components/SuggestedBusinessList';
 import BusinessDescription from '../_components/BusinessDescription';
+import { Button } from '@/components/ui/button';
+import { toast } from 'sonner';
 
 function BusinessDetail({ params }) {
 
@@ -97,6 +99,8 @@ function BusinessDetail({ params }) {
         });
     };
 
+    
+
     return status == 'authenticated' && business && (
         <div className='py-8 md:py-20 px-10 md:px-36'>
             <BusinessInfo business={business} />
@@ -110,12 +114,6 @@ function BusinessDetail({ params }) {
                     <SuggestedBusinessList business={business} />
                 </div>
             </div>
-
-            <button className='text-white bg-black p-3 rounded-xl mt-10 '
-                onClick={makePayment}
-            >
-                Payment kra
-            </button>
 
         </div>
     )

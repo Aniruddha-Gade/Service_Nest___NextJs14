@@ -4,6 +4,9 @@ import React from 'react'
 function BusinessDescription({ business }) {
     return business?.name && (
         <div>
+            <p className='text-green-700 font-semibold bg-green-100 w-fit p-2 rounded-xl mb-6 '>
+                Price : {business?.price}
+            </p>
             <h2 className='font-bold text-[25px] '>Description</h2>
             <p className='mt-4 text-lg text-gray-600'>{business.about}</p>
 

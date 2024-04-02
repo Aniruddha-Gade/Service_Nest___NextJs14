@@ -130,18 +130,22 @@ function BookingSection({ children, business }) {
                                         variant='outiline'
                                         className={`border rounded-full p-2 px-3 hover:bg-primary hover:text-white
                                               ${selectedTime == item.time && 'bg-primary text-white'}
-                                              ${isSlotBooked(item.time) && 'bg-red-800 text-white ' }
-                                              `} 
+                                              ${isSlotBooked(item.time) && 'bg-red-800 text-white '}
+                                              `}
                                         onClick={() => setSelectedTime(item.time)}
                                     >
                                         {item.time}
                                     </Button>
                                 ))}
                             </div>
-
+                            <p className='font-bold text-center bg-green-100 text-green-500 p-2 rounded-xl my-5'>
+                                we offer you pay after service...😊
+                            </p>
                         </SheetDescription>
+
                     </SheetHeader>
-                    <SheetFooter className="mt-5">
+
+                    <SheetFooter className="mt-2">
                         <SheetClose asChild>
                             <div className='flex gap-5'>
                                 <Button variant="destructive"
@@ -151,7 +155,8 @@ function BookingSection({ children, business }) {
                                     disabled={!(selectedTime && date)}
                                     onClick={() => saveBooking()}
                                 >
-                                    Book</Button>
+                                    Book
+                                </Button>
                             </div>
 
                         </SheetClose>
