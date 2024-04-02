@@ -10,16 +10,24 @@ const Hero = () => {
       initial={{ opacity: 0, y: 50 }} // Initial animation state
       animate={{ opacity: 1, y: 0 }} // Animation when component is mounted
       transition={{ duration: 0.5 }} // Animation duration
-      className="flex items-center gap-3 flex-col justify-center pt-24 pb-7 bg-gradient-to-r from-blue-500 to-purple-500"
+      // className="flex items-center gap-3 flex-col justify-center pt-24 pb-7 bg-gradient-to-r from-blue-500 to-purple-500"
+      className="relative flex items-center gap-3 flex-col justify-start md:justify-center md:pt-24 md:pb-7"
     >
-      <h2 className="font-bold text-[46px] text-center text-white">
+
+      <video
+        src="/assets/images/background-video.mp4" loop muted autoPlay
+        className='absolute w-full bg-cover bg-top -z-50'
+      >
+      </video>
+
+      <h2 className="font-bold text-2xl leading-[50px] md:leading-[60px] md:text-[46px] text-center text-white">
         Find Home
-        <span className="text-primary"> Service/Repair</span>
+        <span className="text-purple-500 bg-neutral-100 p-1 md:py-2 px-4 rounded-xl text-center mx-7">Services</span>
         <br />
         Near You
       </h2>
 
-      <h2 className="text-xl text-center text-gray-400">
+      <h2 className="text-xl text-center text-white/80">
         Explore Best Home Service & Repair near you
       </h2>
 
