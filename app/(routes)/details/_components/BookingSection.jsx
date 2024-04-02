@@ -76,11 +76,11 @@ function BookingSection({ children, business }) {
         GlobalApi.createNewBooking(business.id,
             moment(date).format('DD-MMM-yyyy'), selectedTime, data.user.email, data.user.name)
             .then(resp => {
-                console.log(resp);
                 if (resp) {
                     setDate();
                     setSelectedTime('');
-                    toast('Service Booked successfully!')
+                    toast(`<b>Service Booked successfully 🎉</b>`)
+                    console.log("Service Booked successfully => ",resp);
                     // Toast Msg 
                 }
             }, (e) => {
