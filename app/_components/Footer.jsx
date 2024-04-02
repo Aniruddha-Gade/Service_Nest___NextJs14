@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='flex justify-between max-md:flex-col gap-5 px-6 sm:px-16 py-10 flex-wrap '>
                 <div className='flex flex-col justify-start items-start gap-6'>
                     <Image
-                        src='/assets/logo/smart-home-logo.jpg'
+                        src='/assets/logo/smart-home-logo.png'
                         width={118}
                         height={18}
                         className='object-contain'

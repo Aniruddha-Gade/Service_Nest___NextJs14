@@ -26,21 +26,23 @@ const getCategory = async () => {
 
 const getAllBusinessList = async () => {
   const query = gql`
-    query BusinessList {
-      businessLists {
-        address
-        category {
-          name
-        }
-        contactPerson
-        email
-        images {
-          url
-        }
-        id
+  query BusinessList {
+    businessLists {
+      address
+      category {
         name
       }
+      contactPerson
+      email
+      price1
+      images {
+        url
+      }
+      id
+      name
     }
+  }
+  
   `;
   const result = await request(MASTER_URL, query);
   return result;

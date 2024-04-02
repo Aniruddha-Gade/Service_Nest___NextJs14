@@ -35,7 +35,7 @@ export default function Home() {
 
       <CategoryList categoryList={categoryList} />
 
-      <BusinessList businessList={businessList} title={"Popular Business"} />
+   
     </div>
   );
 }
