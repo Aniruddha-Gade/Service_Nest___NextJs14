@@ -34,7 +34,7 @@ const getAllBusinessList = async () => {
       }
       contactPerson
       email
-      price1
+      price
       images {
         url
       }
@@ -87,6 +87,7 @@ const getBusinessById = async (id) => {
     }
     contactPerson
     email
+    price
     id
     name
     images {
