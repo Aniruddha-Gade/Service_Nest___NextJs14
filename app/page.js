@@ -18,6 +18,7 @@ export default function Home() {
   // Used to get All Category List
   const getCategoryList = () => {
     GlobalApi.getCategory().then((resp) => {
+      console.log("resp.categories =", resp.categories)
       setCategoryList(resp.categories);
     });
   };

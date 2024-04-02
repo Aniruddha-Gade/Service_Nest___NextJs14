@@ -21,6 +21,7 @@ function BusinessDetail({ params }) {
 
     const getbusinessById = () => {
         GlobalApi.getBusinessById(params.businessId).then(resp => {
+            console.log("your business details => ", resp?.businessList)
             setBusiness(resp.businessList);
         })
     }

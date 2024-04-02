@@ -35,15 +35,8 @@ function CategorySideBar() {
             <div>
                 {categoryList.map((category, index) => (
                     <Link href={'/search/' + category.name}
-                        key={index} className={`flex gap-2 p-3 
-                border rounded-lg mb-3
-                md:mr-10 cursor-pointer
-                hover:bg-purple-50
-                hover:shadow-md
-                items-center
-                hover:text-primary
-                 hover:border-primary
-                 ${selectedCategory == category.name &&
+                        key={index} className={`flex gap-2 p-3 border rounded-lg mb-3 md:mr-10 cursor-pointer  hover:bg-purple-50 hover:shadow-md items-center hover:text-primary hover:border-primary
+                        ${selectedCategory == category.name &&
                             'border-primary text-primary shadow-md bg-purple-50'}
                  `}>
                         <Image src={category.icon.url}
