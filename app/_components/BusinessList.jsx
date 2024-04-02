@@ -27,7 +27,11 @@ function BusinessList({ businessList, title }) {
                             <h2 className='font-bold text-lg'>{business.name}</h2>
                             <h2 className='text-primary'>{business.contactPerson}</h2>
                             <h2 className='text-gray-500 text-sm'>{business.address.split(" ").slice(0, 15).join(" ")}</h2>
-                            <Button className="rounded-lg mt-3">Book Now</Button>
+                                <p className='text-green-700 font-semibold bg-green-100 w-fit p-2 rounded-xl  '>
+                                    Price : {business.price}
+                                </p>
+
+                                <Button className="rounded-lg mt-3">Book Now</Button>
                         </div>
                     </Link>
                 ))
