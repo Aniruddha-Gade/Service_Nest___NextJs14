@@ -10,7 +10,7 @@ function MyBooking() {
 
     const { data } = useSession();
     const [bookingHistory, setBookingHistory] = useState([]);
-    useEffect(() => {
+    useEffect(() => {``
         data && GetUserBookingHistory();
     }, [data])
 
