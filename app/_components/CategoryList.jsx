@@ -3,10 +3,10 @@ import Link from "next/link";
 import React from "react";
 
 function CategoryList({ categoryList }) {
-  console.log("categoryList =", categoryList)
+  console.log("categoryList =", categoryList);
   return (
     <div
-      className="mx-4 md:mx-22 lg:mx-52 grid grid-cols-3
+      className="mx-4 py-10 md:mx-22 lg:mx-52 grid grid-cols-3
     md:grid-cols-4 lg:grid-cols-6 gap-4"
     >
       {categoryList.length > 0
@@ -20,12 +20,14 @@ function CategoryList({ categoryList }) {
              cursor-pointer hover:scale-110 transition-all ease-in-out
              `}
             >
-              <Image
-                src={category.icon.url}
-                alt="icon"
-                width={35}
-                height={35}
-              />
+              <div className="animate-pulse">
+                <Image
+                  src={category.icon.url}
+                  alt="icon"
+                  width={50}
+                  height={50}
+                />
+              </div>
               <h2 className="text-primary">{category.name}</h2>
             </Link>
           ))
