@@ -9,7 +9,7 @@ function BusinessList({ businessList, title }) {
 
     return (
         <div className='mt-5 wrapper'>
-            <h2 className='font-bold text-[22px]'>{title}</h2>
+            <h2 className='font-bold text-center sm:text-left text-[22px]'>{title}</h2>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5 '>
                 {businessList.length > 0 ? businessList.map((business) => (
                     <Link href={'/details/' + business.id}
