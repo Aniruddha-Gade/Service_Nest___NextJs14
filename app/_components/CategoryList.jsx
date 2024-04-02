@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 function CategoryList({ categoryList }) {
+  console.log("categoryList =", categoryList)
   return (
     <div
       className="mx-4 md:mx-22 lg:mx-52 grid grid-cols-3
