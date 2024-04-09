@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '../../../../components/ui/button'
 import { Calendar, Clock, MapPin, User } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
@@ -12,8 +12,8 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
-import GlobalApi from '@/app/_services/GlobalApi'
+} from "../../../../components/ui/alert-dialog"
+import GlobalApi from '../../../_services/GlobalApi'
 import { toast } from 'sonner'
 
 

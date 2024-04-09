@@ -1,10 +1,9 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../../components/ui/tabs"
 import BookingHistoryList from './_components/BookingHistoryList'
-import GlobalApi from '@/app/_services/GlobalApi'
+import GlobalApi from '../../_services/GlobalApi'
 import { useSession } from 'next-auth/react'
-import moment from 'moment'
 
 function MyBooking() {
 
