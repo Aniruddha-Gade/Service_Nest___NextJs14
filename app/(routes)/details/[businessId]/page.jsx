@@ -1,13 +1,12 @@
 "use client"
 
 
-import GlobalApi from '@/app/_services/GlobalApi';
+import GlobalApi from '../../../../app/_services/GlobalApi';
 import { signIn, useSession } from 'next-auth/react'
 import React, { useEffect, useState } from 'react'
 import BusinessInfo from '../_components/BusinessInfo';
 import SuggestedBusinessList from '../_components/SuggestedBusinessList';
 import BusinessDescription from '../_components/BusinessDescription';
-import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 
 function BusinessDetail({ params }) {

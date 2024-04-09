@@ -1,6 +1,6 @@
 import stripe from 'stripe'
 import { NextResponse } from 'next/server'
-import GlobalApi from '@/app/_services/GlobalApi'
+import GlobalApi from '../../../../app/_services/GlobalApi'
 import moment from 'moment'
 
 export async function POST(request: Request) {

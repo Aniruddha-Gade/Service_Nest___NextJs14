@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"; // Import motion from framer-motion for animations
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Input } from "../../components/ui/input";
 import { Search } from "lucide-react";
 
 const Hero = () => {

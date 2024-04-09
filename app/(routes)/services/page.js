@@ -1,7 +1,7 @@
 "use client";
 
-import BusinessList from '@/app/_components/BusinessList';
-import GlobalApi from '@/app/_services/GlobalApi';
+import BusinessList from '../../_components/BusinessList';
+import GlobalApi from '../../_services/GlobalApi';
 import React, { useEffect, useState } from 'react';
 
 const Services = () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { footerLinks } from '@/constants'
+import { footerLinks } from '../../constants/index'
 
 
 const Footer = () => {

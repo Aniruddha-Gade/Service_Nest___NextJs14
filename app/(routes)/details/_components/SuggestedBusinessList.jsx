@@ -1,17 +1,9 @@
-import GlobalApi from '@/app/_services/GlobalApi';
-import { Button } from '@/components/ui/button'
+import GlobalApi from '../../../_services/GlobalApi';
+import { Button } from '../../../../components/ui/button'
 import { NotebookPen } from 'lucide-react'
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
-import {
-    Sheet,
-    SheetContent,
-    SheetDescription,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-} from "@/components/ui/sheet"
 import BookingSection from './BookingSection';
 
 function SuggestedBusinessList({ business }) {

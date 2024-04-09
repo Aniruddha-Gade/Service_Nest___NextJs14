@@ -8,15 +8,15 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-} from "@/components/ui/sheet"
+} from "../../../../components/ui/sheet"
 
-import { Calendar } from "@/components/ui/calendar"
-import { Button } from '@/components/ui/button';
-import GlobalApi from '@/app/_services/GlobalApi';
+import { Calendar } from "../../../../components/ui/calendar"
+import { Button } from '../../../../components/ui/button';
+import GlobalApi from '../../../_services/GlobalApi';
 import { useSession } from 'next-auth/react';
 import { toast } from 'sonner';
 import moment from 'moment';
-import { checkoutOrder } from '@/app/_services/stripe';
+import { checkoutOrder } from '../../../_services/stripe';
 
 function BookingSection({ children, business }) {
 
