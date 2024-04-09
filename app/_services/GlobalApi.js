@@ -1,5 +1,4 @@
 import request, { gql } from "graphql-request";
-import { checkoutOrder } from "./stripe";
 
 const MASTER_URL = "https://api-ap-south-1.hygraph.com/v2/" +
   process.env.NEXT_PUBLIC_MASTER_URL_KEY +

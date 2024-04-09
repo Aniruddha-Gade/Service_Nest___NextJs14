@@ -10,6 +10,7 @@ export const checkoutOrder = async (order) => {
   let redirectPath = null
 
   try {
+
     const session = await stripe.checkout.sessions.create({
       line_items: [
         {
@@ -18,7 +19,7 @@ export const checkoutOrder = async (order) => {
             unit_amount: price,
             product_data: {
               name: order.name,
-              images: order.images && order.images.length > 0 ? order.images[0].url : [],
+              images: order.images && order.images.length > 0 ? order.images.map(image => image.url) : [],
             }
           },
           description: order.about,
