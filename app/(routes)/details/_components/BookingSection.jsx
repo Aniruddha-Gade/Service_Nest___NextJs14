@@ -16,6 +16,7 @@ import GlobalApi from '@/app/_services/GlobalApi';
 import { useSession } from 'next-auth/react';
 import { toast } from 'sonner';
 import moment from 'moment';
+import { checkoutOrder } from '@/app/_services/stripe';
 
 function BookingSection({ children, business }) {
 
@@ -65,7 +66,7 @@ function BookingSection({ children, business }) {
         setTimeSlot(timeList)
     }
 
-    const saveBooking = () => {
+    const saveBooking = async () => {
         // console.log({
         //     id: business.id,
         //     selectedTime,
@@ -73,21 +74,34 @@ function BookingSection({ children, business }) {
         //     name: data.user.name,
         //     date: moment(date).format('DD-MMM-yyyy')
         // })
-        GlobalApi.createNewBooking(business.id,
-            moment(date).format('DD-MMM-yyyy'), selectedTime, data.user.email, data.user.name)
-            .then(resp => {
-                if (resp) {
-                    setDate();
-                    setSelectedTime('');
-                    toast(`<b>Service Booked successfully 🎉</b>`)
-                    console.log("Service Booked successfully => ",resp);
-                    // Toast Msg 
-                }
-            }, (e) => {
-                console.log("Error while booking ", e)
-                toast('Error while creating booking')
-                //Error Toast Msg
-            })
+
+        const order = {
+            businessId: business.id,
+            name: business.name,
+            buyerId: business.id,
+            price: business.price,
+            images:business.images,
+            time:selectedTime,
+          }
+          await checkoutOrder(order)
+
+          toast("Helo aniruddha")
+
+        // GlobalApi.createNewBooking(business.id,
+        //     moment(date).format('DD-MMM-yyyy'), selectedTime, data.user.email, data.user.name, business)
+        //     .then(async (resp) => {
+        //         if (resp) {
+        //             setDate();
+        //             setSelectedTime('');
+        //             // Toast Msg 
+        //             toast(`<b>Service Booked successfully 🎉</b>`)
+        //             console.log("Service Booked successfully => ", resp);
+        //         }
+        //     }, (e) => {
+        //         console.log("Error while booking ", e)
+        //         //Error Toast Msg
+        //         toast('Error while creating booking')
+        //     })
     }
 
     // check if current slot is booked or not
