@@ -21,7 +21,7 @@ const Hero = () => {
       </video>
 
       <h2 className="font-bold text-2xl leading-[50px] md:leading-[60px] md:text-[46px] text-center text-white">
-        Find Home
+        Find 
         <span className="text-purple-500 bg-neutral-100 p-1 md:py-2 px-4 rounded-xl text-center mx-7">Services</span>
         <br />
         Near You
