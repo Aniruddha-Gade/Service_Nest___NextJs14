@@ -2,7 +2,7 @@
 
 
 <h1>
-   Hackthon Project 
+   Hackathon  Project 
 </h1> 
 
 <h2>
